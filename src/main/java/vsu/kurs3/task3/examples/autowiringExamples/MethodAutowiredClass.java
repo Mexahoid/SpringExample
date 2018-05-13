@@ -1,6 +1,6 @@
 package vsu.kurs3.task3.examples.autowiringExamples;
 
-import vsu.kurs3.task3.services.IPrinterService;
+import vsu.kurs3.task3.examples.services.IPrinterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -5,8 +5,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import vsu.kurs3.task3.examples.autowiringExamples.*;
-
-import java.util.List;
+import vsu.kurs3.task3.examples.scopeExamples.ScopeController;
 
 @Component
 public class ConsoleController implements CommandLineRunner {
@@ -14,8 +13,12 @@ public class ConsoleController implements CommandLineRunner {
     @Autowired
     private AutowireController ac;
 
+    @Autowired
+    private ScopeController sc;
+
     @Override
     public void run(String... args) throws Exception {
         ac.Show();
+        sc.Show();
     }
 }
